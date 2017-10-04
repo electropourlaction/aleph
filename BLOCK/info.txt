@@ -8,15 +8,14 @@ mod/aleph-block.ldr
 UI:
 sw 1 : new
 sw 2 : record
-sw 3 : view (not done yet)
+sw 3 : view
 sw 4 : save
 
 IO
-CV in 1 takes signals in the range of 0-5V
-AUDIO out 1 sends out a test tone, that is supposed to be a steady 24K (no there yet!) 
+CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit
 
-samples are saved in raw pcm16le format. use:
+samples are saved in a raw pcm16le format. use:
 
-./ffmpeg -f s16le -ar 48k —ac 1 -i sample.block sample.wav
+./ffmpeg -f s16le -ar 48k -i sample.block sample.wav
 
-to convert.
+to convert to wav | mono 48k
