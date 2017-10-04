@@ -1,21 +1,23 @@
 
-FILES
+FILECOPY
 app/aleph-block-0.1.0.hex
 data/block/samples/
 mod/aleph-block.dsc
 mod/aleph-block.ldr
 
-UI:
+UI
 sw 1 : new
 sw 2 : record
 sw 3 : view
 sw 4 : save
 
 IO
-CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit
+CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit. note: signals above 2.5V will show up as negative in this version.
 
-samples are saved in a raw pcm16le format. use:
+samples are saved to a raw pcm16le format in the folder data/block/samples/
+
+use this
 
 ./ffmpeg -f s16le -ar 48k -i sample.block sample.wav
 
-to convert to wav | mono 48k
+to convert them to wav.
