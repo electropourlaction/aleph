@@ -12,7 +12,7 @@ sw 3 : view
 sw 4 : save
 
 IO
-CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit. note: signals above 2.5V will show up as negative in this version.
+CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit. note: signals above 2.5V will show up as negative in this version. sample time is fixed at 4 seconds.
 
 samples are saved to a raw pcm16le format in the folder data/block/samples/
 
