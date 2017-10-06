@@ -8,7 +8,7 @@ mod/aleph-block.ldr
 UI
 sw 1 : new
 sw 2 : record
-sw 3 : clip/headroom test
+sw 3 : view
 sw 4 : save
 
 IO
