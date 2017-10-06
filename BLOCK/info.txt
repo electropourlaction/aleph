@@ -17,9 +17,8 @@ CV in 1 takes signals in the range of 0-5V and samples them at 48k | 12bit. samp
 note: pressing sw 3 will test for any values over 5V within a capture, if found a message "clip.." is returned, if not found the "headroom to clip" value is returned.
 
 samples are saved to a raw s16le format in the folder data/block/samples/
-
-use this
+use this..
 
 ./ffmpeg -f s16le -acodec pcm_s16le -ar 48k -i sample.s16le sample.wav
 
-to convert them to wav.
+to convert them to .wav
